@@ -1,0 +1,9 @@
+Backend/.env
+Backend/.venv/
+Backend/*.db
+Backend/*.sqbpro
+Frontend/node_modules/
+Frontend/dist/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
