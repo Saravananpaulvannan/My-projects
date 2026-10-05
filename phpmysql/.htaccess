@@ -1,0 +1,11 @@
+Options -Indexes
+RewriteEngine On
+
+RewriteRule ^api/v1(?:/.*)?$ api.php [QSA,L]
+RewriteRule ^health$ api.php?health=1 [QSA,L]
+RewriteRule ^media/(.*)$ uploads/$1 [L,NC]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^ index.html [L]
