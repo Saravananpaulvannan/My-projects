@@ -1,12 +1,18 @@
 import sqlite3
+from datetime import UTC, datetime, timedelta
+from decimal import Decimal
 from pathlib import Path
 
 from alembic import command
 from alembic.config import Config
 from pwdlib import PasswordHash
-from sqlalchemy import create_engine, inspect
+from sqlalchemy import create_engine, inspect, select
+from sqlalchemy.orm import Session
 
+from app.database import Base
 from app.config import settings
+from app.migrate_sqlite_to_mysql import copy_application_data
+from app.models import AdminSession, CustomerSession, Order, OrderItem, Product, User
 
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
@@ -168,3 +174,83 @@ def test_migration_repairs_composite_user_primary_key_foreign_keys(tmp_path, mon
         )
         assert db.exec_driver_sql("PRAGMA foreign_key_check").all() == []
     engine.dispose()
+
+
+def test_sqlite_data_copy_preserves_application_rows(tmp_path):
+    source_engine = create_engine(f"sqlite:///{(tmp_path / 'source.sqlite').as_posix()}")
+    target_engine = create_engine(f"sqlite:///{(tmp_path / 'target.sqlite').as_posix()}")
+    Base.metadata.create_all(source_engine)
+    Base.metadata.create_all(target_engine)
+
+    with Session(source_engine) as db:
+        user = User(
+            id=12,
+            user_name="Migration Customer",
+            user_email="migration@example.com",
+            user_mobile="9876543210",
+            password="argon-hash",
+            is_admin=True,
+        )
+        product = Product(
+            id=45,
+            name="Migration Product",
+            category="Sparklers",
+            mrp=100,
+            price=10,
+            pack_unit="Box",
+            stock_quantity=4,
+            is_active=True,
+        )
+        order = Order(
+            id=67,
+            order_number="ACMIGRATE01",
+            customer_name="Migration Customer",
+            phone="9876543210",
+            address="12 Example Road",
+            city="Sivakasi",
+            state="Tamil Nadu",
+            pincode="626123",
+            payment_method="cod",
+            user_id=12,
+            subtotal=Decimal(10),
+            total=Decimal(10),
+            status="received",
+            delivery_status="Packed",
+        )
+        order.items.append(OrderItem(
+            product_id=45,
+            name="Migration Product",
+            pack_unit="Box",
+            mrp=100,
+            price=10,
+            quantity=1,
+            line_total=Decimal(10),
+        ))
+        db.add_all([
+            user,
+            product,
+            order,
+            AdminSession(token_hash="a" * 64, phone="9876543210", expires_at=datetime.now(UTC) + timedelta(hours=1)),
+            CustomerSession(token_hash="b" * 64, user_id=12, expires_at=datetime.now(UTC) + timedelta(hours=1)),
+        ])
+        db.commit()
+
+    copied = copy_application_data(source_engine, target_engine)
+    assert copied == {
+        "products": 1,
+        "users": 1,
+        "orders": 1,
+        "order_items": 1,
+        "admin_sessions": 1,
+        "customer_sessions": 1,
+    }
+    with Session(target_engine) as db:
+        assert db.get(Product, 45).name == "Migration Product"
+        assert db.get(User, 12).is_admin is True
+        migrated_order = db.scalar(select(Order).where(Order.order_number == "ACMIGRATE01"))
+        assert migrated_order.user_id == 12
+        assert migrated_order.delivery_status == "Packed"
+        assert migrated_order.items[0].price == 10
+        assert db.get(CustomerSession, 1).user_id == 12
+    source_engine.dispose()
+    target_engine.dispose()

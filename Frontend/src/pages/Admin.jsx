@@ -14,7 +14,7 @@ const sections = [
 ];
 
 export default function Admin() {
-  const { admin, customer } = useAuth();
+  const { admin, customer, logout } = useAuth();
   const [section, setSection] = useState('dashboard');
   const adminIdentity = admin || { name: customer?.name, phone: customer?.mobile };
   const currentSection = sections.find((item) => item.id === section) || sections[0];
@@ -23,6 +23,9 @@ export default function Admin() {
     <div className="page admin">
       <div className="page-head">
         <h1 className="page-title">{currentSection.label}</h1>
+        <button type="button" className="btn btn-ghost" onClick={logout}>
+          <Icon name="log-out" size={16} /> Logout
+        </button>
       </div>
       <p className="admin-user with-icon">
         <Icon name="user" size={16} /> Logged in as <strong>{adminIdentity.name}</strong> ({adminIdentity.phone})

@@ -26,6 +26,31 @@ The API is available at `http://localhost:8000`; interactive API documentation i
 
 The admin workspace provides product management, order details, delivery-status updates, customer access management, and server-generated order PDFs. Install dependencies from `Backend/requirements.txt` to enable PDF generation (ReportLab).
 
+## Migrate SQLite data to MySQL
+
+Use MySQL 8 or compatible and create an empty destination database and user first. Stop the backend during migration. Install the updated backend requirements manually so the MySQL driver is available:
+
+```powershell
+Backend/.venv/Scripts/python.exe -m pip install -r Backend/requirements.txt
+```
+
+In `Backend/.env`, keep `SQLITE_SOURCE_URL` pointed at the existing SQLite file and set `DATABASE_URL` to the destination, for example:
+
+```dotenv
+SQLITE_SOURCE_URL=sqlite:///./Backend/aradhaya_crackers.db
+DATABASE_URL=mysql+pymysql://DB_USER:URL_ENCODED_PASSWORD@DB_HOST:3306/DB_NAME?charset=utf8mb4
+```
+
+Percent-encode special characters in the password. From the repository root, run:
+
+```powershell
+$env:PYTHONPATH = (Resolve-Path Backend).Path
+Backend/.venv/Scripts/python.exe -m app.migrate_sqlite_to_mysql
+Remove-Item Env:PYTHONPATH
+```
+
+The script upgrades both schemas to the current Alembic head, copies products, users, orders, order items, and sessions in foreign-key order, preserves IDs, checks row counts, and refuses to merge into non-empty application tables in MySQL. Keep a backup of the SQLite file until the MySQL app has been verified. Product image files are stored outside the database; copy `Backend/uploads` to the configured persistent upload directory separately if it contains images. The backend uses MySQL after the migration because `DATABASE_URL` remains set to the MySQL URL.
+
 ## Admin setup
 
 Generate an Argon2 password hash interactively:

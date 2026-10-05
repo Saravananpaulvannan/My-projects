@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useCart } from '../context/CartContext.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
@@ -17,33 +16,7 @@ const links = [
 
 export default function Sidebar({ open, onClose }) {
   const { count } = useCart();
-  const { admin, customer, isAdmin, openLogin, logout } = useAuth();
-  const adminProfile = admin || (customer?.is_admin ? { name: customer.name, phone: customer.mobile } : null);
-  const [settingsOpen, setSettingsOpen] = useState(false);
-  const settingsRef = useRef(null);
-
-  useEffect(() => {
-    if (!settingsOpen) return;
-    const onDown = (e) => !settingsRef.current?.contains(e.target) && setSettingsOpen(false);
-    const onKey = (e) => e.key === 'Escape' && setSettingsOpen(false);
-    document.addEventListener('mousedown', onDown);
-    document.addEventListener('keydown', onKey);
-    return () => {
-      document.removeEventListener('mousedown', onDown);
-      document.removeEventListener('keydown', onKey);
-    };
-  }, [settingsOpen]);
-
-  const handleLogin = () => {
-    setSettingsOpen(false);
-    onClose();
-    openLogin();
-  };
-
-  const handleLogout = () => {
-    setSettingsOpen(false);
-    logout();
-  };
+  const { customer, isAdmin } = useAuth();
 
   return (
     <aside className={`sidebar ${open ? 'open' : ''}`}>
@@ -81,41 +54,6 @@ export default function Sidebar({ open, onClose }) {
         <p>Up to 90% off listed prices. Minimum order depends on delivery state.</p>
       </div>
 
-      <div className="settings" ref={settingsRef}>
-        {settingsOpen && (
-          <div className="settings-menu" role="menu">
-            {isAdmin ? (
-              <>
-                <div className="settings-user">
-                  <Icon name="user" size={18} />
-                  <div>
-                    <strong>{adminProfile.name}</strong>
-                    <small>{adminProfile.phone}</small>
-                  </div>
-                </div>
-                <button type="button" role="menuitem" onClick={handleLogout}>
-                  <Icon name="log-out" size={16} /> Logout
-                </button>
-              </>
-            ) : (
-              <button type="button" role="menuitem" onClick={handleLogin}>
-                <Icon name="log-in" size={16} /> Login as Admin
-              </button>
-            )}
-          </div>
-        )}
-        <button
-          type="button"
-          className="settings-btn"
-          aria-label="Settings"
-          aria-haspopup="menu"
-          aria-expanded={settingsOpen}
-          onClick={() => setSettingsOpen((o) => !o)}
-        >
-          <Icon name="settings" size={20} />
-          <span>{isAdmin ? adminProfile.name : 'Settings'}</span>
-        </button>
-      </div>
     </aside>
   );
 }

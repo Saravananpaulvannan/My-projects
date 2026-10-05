@@ -81,7 +81,7 @@ button { font: inherit; cursor: pointer; }
   display: flex; align-items: center; gap: 12px; padding: 11px 14px; border-radius: 12px;
   color: var(--text); font-weight: 500; transition: background 0.2s, color 0.2s, transform 0.2s;
 }
-.sidebar .nav-link, .sidebar .sidebar-card, .sidebar .settings, .sidebar .settings-btn { font-size: 14px; }
+.sidebar .nav-link, .sidebar .sidebar-card { font-size: 14px; }
 .nav-link .nav-icon { color: var(--muted); transition: color 0.2s; }
 .nav-link:hover { background: var(--primary-soft); color: var(--primary); transform: translateX(3px); }
 .nav-link:hover .nav-icon { color: var(--primary); }
@@ -101,16 +101,6 @@ button { font: inherit; cursor: pointer; }
 .backdrop { display: none; }
 
 /* Settings & admin */
-.settings { position: relative; }
-.settings-btn { width: 100%; display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--background); color: var(--text); font-weight: 500; text-align: left; transition: border-color 0.2s, color 0.2s; }
-.settings-btn:hover { border-color: var(--primary); color: var(--primary); }
-.settings-btn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.settings-menu { position: absolute; bottom: calc(100% + 8px); left: 0; right: 0; background: var(--surface); color: var(--on-surface); border-radius: 12px; box-shadow: 0 8px 28px rgba(var(--shadow-rgb), 0.25); padding: 6px; animation: fade 0.15s ease; }
-.settings-menu button { width: 100%; display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: none; border-radius: 8px; background: transparent; color: var(--on-surface); font-weight: 500; text-align: left; }
-.settings-menu button:hover { background: var(--primary-soft); color: var(--primary); }
-.settings-user { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--border); margin-bottom: 4px; color: var(--primary); }
-.settings-user div { display: flex; flex-direction: column; color: var(--on-surface); }
-.settings-user small { color: var(--muted); }
 .admin-chip { display: inline-flex; align-items: center; gap: 4px; margin-top: 4px; padding: 2px 8px; border-radius: 999px; background: var(--secondary); color: var(--on-secondary); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
 .admin-user { margin: -8px 0 0; color: var(--muted); }
 .admin-user strong { color: var(--on-surface); }

@@ -5,6 +5,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     database_url: str = "sqlite:///./Backend/aradhaya_crackers.db"
+    sqlite_source_url: str = "sqlite:///./Backend/aradhaya_crackers.db"
     cors_origins: str = "http://localhost:5173"
     admin_name: str = "Admin"
     admin_phone: str = ""
