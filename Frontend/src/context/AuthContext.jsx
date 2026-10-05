@@ -1,19 +1,32 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { getCurrentAdmin, loginAdmin, logoutAdmin } from '../services/api.js';
+import {
+  getCurrentAdmin,
+  getCurrentCustomer,
+  loginAdmin,
+  loginCustomer as loginCustomerRequest,
+  logoutAdmin,
+  logoutCustomer as logoutCustomerRequest,
+  registerCustomer as registerCustomerRequest,
+} from '../services/api.js';
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [admin, setAdmin] = useState(null);
+  const [customer, setCustomer] = useState(null);
   const [loading, setLoading] = useState(true);
   const [loginOpen, setLoginOpen] = useState(false);
 
   useEffect(() => {
     let active = true;
-    getCurrentAdmin()
-      .then((session) => active && setAdmin(session))
-      .catch(() => active && setAdmin(null))
-      .finally(() => active && setLoading(false));
+    Promise.all([
+      getCurrentAdmin().catch(() => null),
+      getCurrentCustomer().catch(() => null),
+    ]).then(([adminSession, customerSession]) => {
+      if (!active) return;
+      setAdmin(adminSession);
+      setCustomer(customerSession);
+    }).finally(() => active && setLoading(false));
     return () => { active = false; };
   }, []);
 
@@ -38,17 +51,52 @@ export function AuthProvider({ children }) {
       }
     };
 
+    const loginCustomer = async (credentials) => {
+      try {
+        const session = await loginCustomerRequest(credentials);
+        setCustomer(session.user);
+        return { ok: true };
+      } catch (error) {
+        return { ok: false, error: error.message };
+      }
+    };
+
+    const registerCustomer = async (profile) => {
+      try {
+        const session = await registerCustomerRequest(profile);
+        setCustomer(session.user);
+        return { ok: true };
+      } catch (error) {
+        return { ok: false, error: error.message };
+      }
+    };
+
+    const logoutCustomer = async () => {
+      try {
+        await logoutCustomerRequest();
+      } catch {
+        // Local access is cleared even if the server cannot be reached.
+      } finally {
+        setCustomer(null);
+      }
+    };
+
     return {
       admin,
       isAdmin: !!admin,
+      customer,
+      isCustomer: !!customer,
       loading,
       login,
       logout,
+      loginCustomer,
+      registerCustomer,
+      logoutCustomer,
       loginOpen,
       openLogin: () => setLoginOpen(true),
       closeLogin: () => setLoginOpen(false),
     };
-  }, [admin, loading, loginOpen]);
+  }, [admin, customer, loading, loginOpen]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

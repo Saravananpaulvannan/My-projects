@@ -11,11 +11,11 @@ const VIEW_KEY = 'aradhaya-products-view';
 
 export default function Products() {
   const [params, setParams] = useSearchParams();
+  const { products, categories, loading, error, refresh } = useCatalog();
   const category = categories.includes(params.get('category')) ? params.get('category') : 'All';
   const [search, setSearch] = useState('');
   const [sort, setSort] = useState('default');
   const { count, subtotal, getQty, addToCart, updateQty } = useCart();
-  const { products, categories, loading, error, refresh } = useCatalog();
   const [view, setView] = useState(() => localStorage.getItem(VIEW_KEY) || 'grid');
 
   const changeView = (v) => {
@@ -97,13 +97,19 @@ export default function Products() {
         </div>
       </div>
 
-      <div className="chips">
+      <div className="chips category-chips">
         {categories.map((c) => (
           <button key={c} className={`chip ${c === category ? 'active' : ''}`} onClick={() => setCategory(c)}>
             {c}
           </button>
         ))}
       </div>
+      <label className="mobile-category-filter">
+        <span>Category</span>
+        <select className="input select" value={category} onChange={(e) => setCategory(e.target.value)}>
+          {categories.map((c) => <option key={c} value={c}>{c === 'All' ? 'All Categories' : c}</option>)}
+        </select>
+      </label>
 
       {loading && <p role="status">Loading products...</p>}
       {error && (
@@ -112,7 +118,7 @@ export default function Products() {
         </div>
       )}
       {view === 'list' ? (
-        !loading && !error && <ProductTable rows={list} getQty={getQty} onSetQty={setCartQty} />
+        !loading && !error && <ProductTable rows={list} getQty={getQty} onSetQty={setCartQty} mobileProductView />
       ) : loading || error ? null : list.length === 0 ? (
         <div className="empty">No products found.</div>
       ) : (

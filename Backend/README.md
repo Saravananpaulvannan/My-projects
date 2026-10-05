@@ -16,8 +16,10 @@ Copy `Backend/.env.example` to `Backend/.env`. Its SQLite URL points to the supp
 ```powershell
 Backend/.venv/Scripts/python -m alembic -c Backend/alembic.ini upgrade head
 npm --prefix Frontend run export-catalog
-Backend/.venv/Scripts/python -m app.seed_catalog
-Backend/.venv/Scripts/python -m uvicorn app.main:app --app-dir Backend --reload
+$env:PYTHONPATH = (Resolve-Path Backend).Path
+.\Backend\.venv\Scripts\python.exe -m app.seed_catalog
+Remove-Item Env:PYTHONPATH
+.\Backend\.venv\Scripts\python.exe -m uvicorn app.main:app --app-dir Backend --reload
 ```
 
 The API is available at `http://localhost:8000`; interactive API documentation is at `/docs`. The frontend Vite server proxies `/api` to this local service.
@@ -27,7 +29,9 @@ The API is available at `http://localhost:8000`; interactive API documentation i
 Generate an Argon2 password hash interactively:
 
 ```powershell
-Backend/.venv/Scripts/python -m app.hash_password
+$env:PYTHONPATH = (Resolve-Path Backend).Path
+.\Backend\.venv\Scripts\python.exe -m app.hash_password
+Remove-Item Env:PYTHONPATH
 ```
 
 Set `ADMIN_PHONE` and `ADMIN_PASSWORD_HASH` in `Backend/.env`. Set `SESSION_COOKIE_SECURE=true` behind HTTPS. The session cookie is HttpOnly, SameSite=Lax, and backed by a hashed token stored in the database.
@@ -41,6 +45,7 @@ Set `ADMIN_PHONE` and `ADMIN_PASSWORD_HASH` in `Backend/.env`. Set `SESSION_COOK
 - `POST /api/v1/auth/login`, `GET /api/v1/auth/me`, and `POST /api/v1/auth/logout`
 
 Order minimums apply to the server-calculated product subtotal: ₹3,000 for Tamil Nadu and ₹5,000 for other states. Delivery fee is ₹0. Only COD orders are accepted.
+Orders include `user_category`, set by the server to `loginuser` for a valid customer session or `guest` otherwise. Existing orders are backfilled as `guest` by the next migration.
 
 ## Tests
 

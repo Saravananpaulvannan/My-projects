@@ -1,0 +1,2495 @@
+[
+  {
+    "id": 1,
+    "name": "2 3/4\" Lakshmi & Kuruvi",
+    "category": "Sound Crackers",
+    "mrp": 80,
+    "price": 72,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 2,
+    "name": "3 1/2\" Lakshmi",
+    "category": "Sound Crackers",
+    "mrp": 140,
+    "price": 126,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 3,
+    "name": "4\" Lakshmi",
+    "category": "Sound Crackers",
+    "mrp": 180,
+    "price": 162,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 4,
+    "name": "4\" Deluxe Lakshmi",
+    "category": "Sound Crackers",
+    "mrp": 260,
+    "price": 234,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 5,
+    "name": "4\" Gold Lakshmi",
+    "category": "Sound Crackers",
+    "mrp": 300,
+    "price": 270,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 6,
+    "name": "4.5\" Bahubali Super Dlx",
+    "category": "Sound Crackers",
+    "mrp": 400,
+    "price": 360,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 7,
+    "name": "5\" Jallikattu Mega Dlx",
+    "category": "Sound Crackers",
+    "mrp": 500,
+    "price": 450,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 8,
+    "name": "6\" Lion King Jumbo Dlx",
+    "category": "Sound Crackers",
+    "mrp": 600,
+    "price": 540,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 9,
+    "name": "7\" Red Label Jumbo Dlx",
+    "category": "Sound Crackers",
+    "mrp": 1000,
+    "price": 900,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 10,
+    "name": "Two Sound Crackers",
+    "category": "Sound Crackers",
+    "mrp": 350,
+    "price": 315,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 11,
+    "name": "Three Sound Crackers",
+    "category": "Sound Crackers",
+    "mrp": 450,
+    "price": 405,
+    "pack_unit": "Pkt",
+    "pieces": 5
+  },
+  {
+    "id": 12,
+    "name": "Mini Peacock",
+    "category": "Flower Pots",
+    "mrp": 1300,
+    "price": 1170,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 13,
+    "name": "Magical Peacock",
+    "category": "Flower Pots",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 14,
+    "name": "Bada Peacock",
+    "category": "Flower Pots",
+    "mrp": 3250,
+    "price": 2925,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 15,
+    "name": "Bada Peacock Mega",
+    "category": "Flower Pots",
+    "mrp": 3750,
+    "price": 3375,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 16,
+    "name": "20-20 / 5G / King of Hitler",
+    "category": "Fancy Novelties",
+    "mrp": 1300,
+    "price": 1170,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 17,
+    "name": "Dora Singer",
+    "category": "Fancy Novelties",
+    "mrp": 1300,
+    "price": 1170,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 18,
+    "name": "Money in the Bank",
+    "category": "Fancy Novelties",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 19,
+    "name": "Sound Marriage",
+    "category": "Fancy Novelties",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 20,
+    "name": "Old is Gold",
+    "category": "Fancy Novelties",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 25
+  },
+  {
+    "id": 21,
+    "name": "90 Watts",
+    "category": "Fancy Novelties",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 22,
+    "name": "Emu Egg",
+    "category": "Fancy Novelties",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 23,
+    "name": "Water Falls / Popcorn Pencils",
+    "category": "Fancy Novelties",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 24,
+    "name": "Water Queen",
+    "category": "Fancy Novelties",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 25,
+    "name": "Sivakasi Spl Pencils",
+    "category": "Fancy Novelties",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 26,
+    "name": "Madurai Malli",
+    "category": "Fancy Novelties",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 27,
+    "name": "Once More",
+    "category": "Fancy Novelties",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 28,
+    "name": "Monkey Star",
+    "category": "Fancy Novelties",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 29,
+    "name": "Top Gun",
+    "category": "Fancy Novelties",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 30,
+    "name": "Pistol 5G",
+    "category": "Fancy Novelties",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 31,
+    "name": "I Cone",
+    "category": "Fancy Novelties",
+    "mrp": 2300,
+    "price": 2070,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 32,
+    "name": "Lollipop",
+    "category": "Fancy Novelties",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 33,
+    "name": "Matu Batlu",
+    "category": "Fancy Novelties",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 34,
+    "name": "Dragon Balls Crackling Fountain",
+    "category": "Fancy Novelties",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 35,
+    "name": "Race Car",
+    "category": "Fancy Novelties",
+    "mrp": 5000,
+    "price": 4500,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 36,
+    "name": "Jelly",
+    "category": "Night Specials",
+    "mrp": 400,
+    "price": 360,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 37,
+    "name": "Kurkure",
+    "category": "Night Specials",
+    "mrp": 750,
+    "price": 675,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 38,
+    "name": "Vennila / Butterscotch / Pista",
+    "category": "Night Specials",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 39,
+    "name": "Pinky Panky / Red Fantasy",
+    "category": "Night Specials",
+    "mrp": 1900,
+    "price": 1710,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 40,
+    "name": "Blue Ice / Green Apple",
+    "category": "Night Specials",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 41,
+    "name": "Oggy / Boss Baby / Rockstar",
+    "category": "Night Specials",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 42,
+    "name": "Fire Splendor Star Crackling",
+    "category": "Night Specials",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 43,
+    "name": "Eril / Roshan / Saturn",
+    "category": "Night Specials",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 44,
+    "name": "Palle Palle / Lovely Hearts Colour Shot",
+    "category": "Night Specials",
+    "mrp": 2200,
+    "price": 1980,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 45,
+    "name": "Crackling Kingdom Amazing Crackling",
+    "category": "Night Specials",
+    "mrp": 2800,
+    "price": 2520,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 46,
+    "name": "Rainbow Rock - Tri Fountain",
+    "category": "Night Specials",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 47,
+    "name": "Jelly Bean Candle",
+    "category": "Fancy Novelties",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 48,
+    "name": "Warrior Sword",
+    "category": "Fancy Novelties",
+    "mrp": 1250,
+    "price": 1125,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 49,
+    "name": "Cubora",
+    "category": "Fancy Novelties",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 50,
+    "name": "Shinchan / Spiderman",
+    "category": "Fancy Novelties",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 51,
+    "name": "Inky Pinky (Pinky Toy Fountain)",
+    "category": "Fancy Novelties",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 52,
+    "name": "4\" Tin",
+    "category": "Kids Specials",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Tin",
+    "pieces": 1
+  },
+  {
+    "id": 53,
+    "name": "6\" Tin",
+    "category": "Kids Specials",
+    "mrp": 1400,
+    "price": 1260,
+    "pack_unit": "Tin",
+    "pieces": 1
+  },
+  {
+    "id": 54,
+    "name": "8\" Tin",
+    "category": "Kids Specials",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Tin",
+    "pieces": 1
+  },
+  {
+    "id": 55,
+    "name": "Dora / Shin Chan / Tom & Jerry",
+    "category": "Kids Specials",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 56,
+    "name": "Harsha Water Queen",
+    "category": "Kids Specials",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 57,
+    "name": "50-50 Mega Fountain",
+    "category": "Kids Specials",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 58,
+    "name": "Golden Fish / Dragon Fish",
+    "category": "Kids Specials",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 59,
+    "name": "Thor Hammer",
+    "category": "Kids Specials",
+    "mrp": 2250,
+    "price": 2025,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 60,
+    "name": "Mini Cylinder",
+    "category": "Kids Specials",
+    "mrp": 600,
+    "price": 540,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 61,
+    "name": "Silver Rain",
+    "category": "Kids Specials",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 62,
+    "name": "Golden Rain",
+    "category": "Kids Specials",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 63,
+    "name": "Peacock Feather",
+    "category": "Kids Specials",
+    "mrp": 1000,
+    "price": 900,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 64,
+    "name": "Mini Siren",
+    "category": "Kids Specials",
+    "mrp": 1300,
+    "price": 1170,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 65,
+    "name": "Mega Siren",
+    "category": "Kids Specials",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 66,
+    "name": "Cylinder",
+    "category": "Kids Specials",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Pcs",
+    "pieces": 1
+  },
+  {
+    "id": 67,
+    "name": "Bat Ball",
+    "category": "Kids Specials",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Pcs",
+    "pieces": 1
+  },
+  {
+    "id": 68,
+    "name": "Mega Sword",
+    "category": "Kids Specials",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Pcs",
+    "pieces": 1
+  },
+  {
+    "id": 69,
+    "name": "Hanuman Gadha",
+    "category": "Kids Specials",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Pcs",
+    "pieces": 1
+  },
+  {
+    "id": 70,
+    "name": "Trisul Vel",
+    "category": "Kids Specials",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Pcs",
+    "pieces": 2
+  },
+  {
+    "id": 71,
+    "name": "Traffic Light",
+    "category": "Fancy Novelties",
+    "mrp": 1000,
+    "price": 900,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 72,
+    "name": "Sizzlers Red & Green",
+    "category": "Fancy Novelties",
+    "mrp": 1200,
+    "price": 1080,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 73,
+    "name": "Sun Drop",
+    "category": "Fancy Novelties",
+    "mrp": 1350,
+    "price": 1215,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 74,
+    "name": "Moon Drop",
+    "category": "Fancy Novelties",
+    "mrp": 1350,
+    "price": 1215,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 75,
+    "name": "Ice Fountain",
+    "category": "Fancy Novelties",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 76,
+    "name": "Tiny Pots",
+    "category": "Fancy Novelties",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 77,
+    "name": "50 Sec Touch",
+    "category": "Fancy Novelties",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 78,
+    "name": "Golden Rain Crackling Fancy",
+    "category": "Fancy Novelties",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 79,
+    "name": "Titoo",
+    "category": "Fancy Novelties",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 80,
+    "name": "Miami Gold",
+    "category": "Fancy Novelties",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 81,
+    "name": "Kurkure Gold",
+    "category": "Fancy Novelties",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 82,
+    "name": "Sparsa Green (Green Flash Torches)",
+    "category": "Fancy Novelties",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 83,
+    "name": "Strawberry",
+    "category": "Fancy Novelties",
+    "mrp": 2750,
+    "price": 2475,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 84,
+    "name": "Butterscotch",
+    "category": "Fancy Novelties",
+    "mrp": 2750,
+    "price": 2475,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 85,
+    "name": "Euro Stars",
+    "category": "Fancy Novelties",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 86,
+    "name": "Blossom (Mega Toy Fountain)",
+    "category": "Fancy Novelties",
+    "mrp": 3100,
+    "price": 2790,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 87,
+    "name": "Pinkie Pie (Pink Toy Fountain)",
+    "category": "Fancy Novelties",
+    "mrp": 3100,
+    "price": 2790,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 88,
+    "name": "Viz Violet (Violet Flash Torches)",
+    "category": "Fancy Novelties",
+    "mrp": 3300,
+    "price": 2970,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 89,
+    "name": "Retro Star",
+    "category": "Fancy Novelties",
+    "mrp": 3500,
+    "price": 3150,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 90,
+    "name": "Tropical Mushroom",
+    "category": "Fancy Novelties",
+    "mrp": 3800,
+    "price": 3420,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 91,
+    "name": "Maria",
+    "category": "Fancy Novelties",
+    "mrp": 3950,
+    "price": 3555,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 92,
+    "name": "Rangan",
+    "category": "Fancy Novelties",
+    "mrp": 3950,
+    "price": 3555,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 93,
+    "name": "Pearl Drops",
+    "category": "Fancy Novelties",
+    "mrp": 4600,
+    "price": 4140,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 94,
+    "name": "Laliga (Red Flickering Mega Fountain)",
+    "category": "Fancy Novelties",
+    "mrp": 7500,
+    "price": 6750,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 95,
+    "name": "Crackling Soda (Unlimited Crackling)",
+    "category": "Fancy Novelties",
+    "mrp": 7500,
+    "price": 6750,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 96,
+    "name": "7 Shot",
+    "category": "Sky Shots",
+    "mrp": 1200,
+    "price": 1080,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 97,
+    "name": "Penta Colour Collection",
+    "category": "Sky Shots",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 98,
+    "name": "Argos Sky Shot",
+    "category": "Sky Shots",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 6
+  },
+  {
+    "id": 99,
+    "name": "Colour Ball / Bubble",
+    "category": "Sky Shots",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 6
+  },
+  {
+    "id": 100,
+    "name": "1\" Fancy Single",
+    "category": "Sky Shots",
+    "mrp": 400,
+    "price": 360,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 101,
+    "name": "2\" Fancy Single",
+    "category": "Sky Shots",
+    "mrp": 1000,
+    "price": 900,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 102,
+    "name": "2\" Fancy 3 Pcs",
+    "category": "Sky Shots",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 103,
+    "name": "2 1/2\" Fancy Single",
+    "category": "Sky Shots",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 104,
+    "name": "2 1/2\" Fancy 3 Pcs",
+    "category": "Sky Shots",
+    "mrp": 3600,
+    "price": 3240,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 105,
+    "name": "3 Step Fancy (3 Balls)",
+    "category": "Sky Shots",
+    "mrp": 3600,
+    "price": 3240,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 106,
+    "name": "3 1/2\" Fancy Single",
+    "category": "Sky Shots",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 107,
+    "name": "3 1/2\" Fancy Special",
+    "category": "Sky Shots",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 108,
+    "name": "3 1/2\" Fancy Double Ball",
+    "category": "Sky Shots",
+    "mrp": 4600,
+    "price": 4140,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 109,
+    "name": "3 1/2\" Fancy 2 Pcs Special",
+    "category": "Sky Shots",
+    "mrp": 5500,
+    "price": 4950,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 110,
+    "name": "4\" Fancy Single",
+    "category": "Sky Shots",
+    "mrp": 3500,
+    "price": 3150,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 111,
+    "name": "4\" Fancy Special",
+    "category": "Sky Shots",
+    "mrp": 4000,
+    "price": 3600,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 112,
+    "name": "5\" Fancy Single",
+    "category": "Sky Shots",
+    "mrp": 4500,
+    "price": 4050,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 113,
+    "name": "5\" Fancy 12 Step",
+    "category": "Sky Shots",
+    "mrp": 5000,
+    "price": 4500,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 114,
+    "name": "Wow Special Colours",
+    "category": "Sky Shots",
+    "mrp": 5500,
+    "price": 4950,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 115,
+    "name": "Double Ball Spl Fancy",
+    "category": "Sky Shots",
+    "mrp": 6000,
+    "price": 5400,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 116,
+    "name": "Ajanta 8 Steps Grand",
+    "category": "Sky Shots",
+    "mrp": 7750,
+    "price": 6975,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 117,
+    "name": "6\" Fancy Mega DLX",
+    "category": "Sky Shots",
+    "mrp": 9500,
+    "price": 8550,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 118,
+    "name": "Krishna Neon Spl Colours (2 Pcs)",
+    "category": "Sky Shots",
+    "mrp": 12500,
+    "price": 11250,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 119,
+    "name": "12 Shot",
+    "category": "Multi Shots",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 120,
+    "name": "12 Shot Colour",
+    "category": "Multi Shots",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 121,
+    "name": "25 Shot",
+    "category": "Multi Shots",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 122,
+    "name": "15 Shots Multicolour",
+    "category": "Multi Shots",
+    "mrp": 2750,
+    "price": 2475,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 123,
+    "name": "30 Shots Multicolour",
+    "category": "Multi Shots",
+    "mrp": 4000,
+    "price": 3600,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 124,
+    "name": "60 Shots Multicolour",
+    "category": "Multi Shots",
+    "mrp": 8000,
+    "price": 7200,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 125,
+    "name": "120 Shots Multicolour",
+    "category": "Multi Shots",
+    "mrp": 16000,
+    "price": 14400,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 126,
+    "name": "240 Shots Multicolour",
+    "category": "Multi Shots",
+    "mrp": 32000,
+    "price": 28800,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 127,
+    "name": "30 Shots Multicolour Special",
+    "category": "Multi Shots",
+    "mrp": 4800,
+    "price": 4320,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 128,
+    "name": "60 Shots Multicolour Special",
+    "category": "Multi Shots",
+    "mrp": 9600,
+    "price": 8640,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 129,
+    "name": "120 Shots Multicolour Special",
+    "category": "Multi Shots",
+    "mrp": 19200,
+    "price": 17280,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 130,
+    "name": "240 Shots Multicolour Special",
+    "category": "Multi Shots",
+    "mrp": 38400,
+    "price": 34560,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 131,
+    "name": "500 Shots Multicolour Special",
+    "category": "Multi Shots",
+    "mrp": 80000,
+    "price": 72000,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 132,
+    "name": "Hand Shots 288",
+    "category": "Multi Shots",
+    "mrp": 6500,
+    "price": 5850,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 133,
+    "name": "5 x 10 Sizzling / Haley",
+    "category": "Multi Shots",
+    "mrp": 27500,
+    "price": 24750,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 134,
+    "name": "5 x 10 Wild / Dragon Mines",
+    "category": "Multi Shots",
+    "mrp": 34000,
+    "price": 30600,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 135,
+    "name": "10 x 10 Dhoni (Sizzling)",
+    "category": "Multi Shots",
+    "mrp": 37500,
+    "price": 33750,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 136,
+    "name": "10 x 10 IPL (Multicolour Blasting)",
+    "category": "Multi Shots",
+    "mrp": 42500,
+    "price": 38250,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 137,
+    "name": "2\" Bada Shot Set Out",
+    "category": "Sky Shots",
+    "mrp": 35000,
+    "price": 31500,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 138,
+    "name": "3.5\" Bada Shot Set Out",
+    "category": "Sky Shots",
+    "mrp": 48000,
+    "price": 43200,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 139,
+    "name": "Flower Pots Small",
+    "category": "Flower Pots",
+    "mrp": 600,
+    "price": 540,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 140,
+    "name": "Flower Pots Big",
+    "category": "Flower Pots",
+    "mrp": 800,
+    "price": 720,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 141,
+    "name": "Flower Pots Special",
+    "category": "Flower Pots",
+    "mrp": 1000,
+    "price": 900,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 142,
+    "name": "Flower Pots Asoka",
+    "category": "Flower Pots",
+    "mrp": 1300,
+    "price": 1170,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 143,
+    "name": "Colour Koti",
+    "category": "Flower Pots",
+    "mrp": 1900,
+    "price": 1710,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 144,
+    "name": "Colour Koti Premium",
+    "category": "Flower Pots",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 145,
+    "name": "Flower Pots DLX",
+    "category": "Flower Pots",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 146,
+    "name": "Flower Pots DLX Premium",
+    "category": "Flower Pots",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 147,
+    "name": "Colour Koti DLX",
+    "category": "Flower Pots",
+    "mrp": 3500,
+    "price": 3150,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 148,
+    "name": "Colour Koti DLX Premium",
+    "category": "Flower Pots",
+    "mrp": 3800,
+    "price": 3420,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 149,
+    "name": "Flower Pots Super DLX",
+    "category": "Flower Pots",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 150,
+    "name": "Ultra Jumbo Super DLX",
+    "category": "Flower Pots",
+    "mrp": 5000,
+    "price": 4500,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 151,
+    "name": "Tri Colour",
+    "category": "Flower Pots",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 152,
+    "name": "Tri Colour DLX SPL",
+    "category": "Flower Pots",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 153,
+    "name": "Mini Star 5 Colours",
+    "category": "Flower Pots",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 154,
+    "name": "Colour Koti DLX Silver",
+    "category": "Flower Pots",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 155,
+    "name": "Colour Koti DLX Green",
+    "category": "Flower Pots",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 156,
+    "name": "Colour Koti DLX Red",
+    "category": "Flower Pots",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 157,
+    "name": "Colour Cone Mega SPR DLX",
+    "category": "Flower Pots",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 158,
+    "name": "Chakkar Big 10 Pcs",
+    "category": "Chakkars",
+    "mrp": 350,
+    "price": 315,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 159,
+    "name": "Chakkar Big 25 Pcs",
+    "category": "Chakkars",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Box",
+    "pieces": 25
+  },
+  {
+    "id": 160,
+    "name": "Chakkar Special",
+    "category": "Chakkars",
+    "mrp": 800,
+    "price": 720,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 161,
+    "name": "Chakkar Deluxe",
+    "category": "Chakkars",
+    "mrp": 1400,
+    "price": 1260,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 162,
+    "name": "Spinner Special",
+    "category": "Chakkars",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 163,
+    "name": "Spinner Deluxe",
+    "category": "Chakkars",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 164,
+    "name": "Whiz Chakkar",
+    "category": "Chakkars",
+    "mrp": 1200,
+    "price": 1080,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 165,
+    "name": "Disco Wheel",
+    "category": "Chakkars",
+    "mrp": 1200,
+    "price": 1080,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 166,
+    "name": "900CC",
+    "category": "Chakkars",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 167,
+    "name": "Whistling Wheel",
+    "category": "Chakkars",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 168,
+    "name": "4 x 4 Wheel",
+    "category": "Chakkars",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 169,
+    "name": "5G Gold Giant Wheel",
+    "category": "Chakkars",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 170,
+    "name": "Planet Wheeling Spl Show",
+    "category": "Chakkars",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 2
+  },
+  {
+    "id": 171,
+    "name": "100 Lights",
+    "category": "Garlands",
+    "mrp": 400,
+    "price": 360,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 172,
+    "name": "200 Lights",
+    "category": "Garlands",
+    "mrp": 800,
+    "price": 720,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 173,
+    "name": "28 Chorsa Lights",
+    "category": "Garlands",
+    "mrp": 130,
+    "price": 117,
+    "pack_unit": "Pkt",
+    "pieces": 1
+  },
+  {
+    "id": 174,
+    "name": "28 Giant Lights",
+    "category": "Garlands",
+    "mrp": 230,
+    "price": 207,
+    "pack_unit": "Pkt",
+    "pieces": 1
+  },
+  {
+    "id": 175,
+    "name": "24 Deluxe Lights",
+    "category": "Garlands",
+    "mrp": 500,
+    "price": 450,
+    "pack_unit": "Pkt",
+    "pieces": 1
+  },
+  {
+    "id": 176,
+    "name": "50 Deluxe Lights",
+    "category": "Garlands",
+    "mrp": 1100,
+    "price": 990,
+    "pack_unit": "Pkt",
+    "pieces": 1
+  },
+  {
+    "id": 177,
+    "name": "100 Deluxe Lights",
+    "category": "Garlands",
+    "mrp": 2200,
+    "price": 1980,
+    "pack_unit": "Pkt",
+    "pieces": 1
+  },
+  {
+    "id": 178,
+    "name": "1000 Lights",
+    "category": "Garlands",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 179,
+    "name": "2000 Lights",
+    "category": "Garlands",
+    "mrp": 3600,
+    "price": 3240,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 180,
+    "name": "5000 Lights",
+    "category": "Garlands",
+    "mrp": 9000,
+    "price": 8100,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 181,
+    "name": "10000 Lights",
+    "category": "Garlands",
+    "mrp": 18000,
+    "price": 16200,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 182,
+    "name": "1000 Lights Premium",
+    "category": "Garlands",
+    "mrp": 2800,
+    "price": 2520,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 183,
+    "name": "2000 Lights Premium",
+    "category": "Garlands",
+    "mrp": 5600,
+    "price": 5040,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 184,
+    "name": "5000 Lights Premium",
+    "category": "Garlands",
+    "mrp": 14000,
+    "price": 12600,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 185,
+    "name": "10000 Lights Premium",
+    "category": "Garlands",
+    "mrp": 28000,
+    "price": 25200,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 186,
+    "name": "Red Bijili (50 Pcs)",
+    "category": "Sound Crackers",
+    "mrp": 150,
+    "price": 135,
+    "pack_unit": "Box",
+    "pieces": 50
+  },
+  {
+    "id": 187,
+    "name": "Red Bijili (100 Pcs)",
+    "category": "Sound Crackers",
+    "mrp": 300,
+    "price": 270,
+    "pack_unit": "Box",
+    "pieces": 100
+  },
+  {
+    "id": 188,
+    "name": "1 1/2\" Twinkling Star UV",
+    "category": "Sparklers",
+    "mrp": 250,
+    "price": 225,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 189,
+    "name": "4\" DLX Twinkling Star UV",
+    "category": "Sparklers",
+    "mrp": 650,
+    "price": 585,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 190,
+    "name": "7\" Pencil",
+    "category": "Sparklers",
+    "mrp": 300,
+    "price": 270,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 191,
+    "name": "10\" Golden Falls Pencil",
+    "category": "Sparklers",
+    "mrp": 460,
+    "price": 414,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 192,
+    "name": "12\" Night Light Pencil",
+    "category": "Sparklers",
+    "mrp": 700,
+    "price": 630,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 193,
+    "name": "16\" Retro Pencil",
+    "category": "Sparklers",
+    "mrp": 1000,
+    "price": 900,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 194,
+    "name": "Jee Boom Baa / Magic Pops",
+    "category": "Kids Specials",
+    "mrp": 100,
+    "price": 90,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 195,
+    "name": "Cartoon",
+    "category": "Kids Specials",
+    "mrp": 120,
+    "price": 108,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 196,
+    "name": "Electric Stone Colour",
+    "category": "Kids Specials",
+    "mrp": 140,
+    "price": 126,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 197,
+    "name": "Snake Egg",
+    "category": "Kids Specials",
+    "mrp": 260,
+    "price": 234,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 198,
+    "name": "Anaconda Big",
+    "category": "Kids Specials",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 199,
+    "name": "Kitkat",
+    "category": "Kids Specials",
+    "mrp": 280,
+    "price": 252,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 200,
+    "name": "Bada Kitkat",
+    "category": "Kids Specials",
+    "mrp": 400,
+    "price": 360,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 201,
+    "name": "Asrafi",
+    "category": "Kids Specials",
+    "mrp": 400,
+    "price": 360,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 202,
+    "name": "Mini Sword",
+    "category": "Kids Specials",
+    "mrp": 600,
+    "price": 540,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 203,
+    "name": "Mega Bullet Bomb",
+    "category": "Bombs",
+    "mrp": 420,
+    "price": 378,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 204,
+    "name": "Atom Bomb",
+    "category": "Bombs",
+    "mrp": 650,
+    "price": 585,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 205,
+    "name": "Hydro Bomb",
+    "category": "Bombs",
+    "mrp": 700,
+    "price": 630,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 206,
+    "name": "King Bomb 3 Ply",
+    "category": "Bombs",
+    "mrp": 1200,
+    "price": 1080,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 207,
+    "name": "Classic Bomb 5 Ply",
+    "category": "Bombs",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 208,
+    "name": "Nuclear / 777 Bomb",
+    "category": "Bombs",
+    "mrp": 2500,
+    "price": 2250,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 209,
+    "name": "Digital Bomb",
+    "category": "Bombs",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 210,
+    "name": "Mega Blast King Rider Bomb",
+    "category": "Bombs",
+    "mrp": 3600,
+    "price": 3240,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 211,
+    "name": "Paper Bomb 1/4 Kg",
+    "category": "Bombs",
+    "mrp": 450,
+    "price": 405,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 212,
+    "name": "Paper Bomb 1/2 Kg",
+    "category": "Bombs",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 213,
+    "name": "Paper Bomb 1 Kg",
+    "category": "Bombs",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 214,
+    "name": "Money Bank Big",
+    "category": "Bombs",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 215,
+    "name": "Colour Bomb",
+    "category": "Bombs",
+    "mrp": 1250,
+    "price": 1125,
+    "pack_unit": "Box",
+    "pieces": 1
+  },
+  {
+    "id": 216,
+    "name": "Avatar Paper Bomb 10 Pcs",
+    "category": "Bombs",
+    "mrp": 3250,
+    "price": 2925,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 217,
+    "name": "Jallikattu Paper Bomb 10 Pcs",
+    "category": "Bombs",
+    "mrp": 4250,
+    "price": 3825,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 218,
+    "name": "Baby Rocket",
+    "category": "Rockets",
+    "mrp": 450,
+    "price": 405,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 219,
+    "name": "Rocket Bomb",
+    "category": "Rockets",
+    "mrp": 650,
+    "price": 585,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 220,
+    "name": "Lunik Rocket",
+    "category": "Rockets",
+    "mrp": 1200,
+    "price": 1080,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 221,
+    "name": "2 Sound Rocket",
+    "category": "Rockets",
+    "mrp": 1400,
+    "price": 1260,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 222,
+    "name": "3 Sound Rocket",
+    "category": "Rockets",
+    "mrp": 1600,
+    "price": 1440,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 223,
+    "name": "Musical Rocket",
+    "category": "Rockets",
+    "mrp": 1200,
+    "price": 1080,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 224,
+    "name": "Whistling Rocket with Crackling",
+    "category": "Rockets",
+    "mrp": 2000,
+    "price": 1800,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 225,
+    "name": "Photo Flash",
+    "category": "Kids Specials",
+    "mrp": 750,
+    "price": 675,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 226,
+    "name": "Selfie Stick",
+    "category": "Kids Specials",
+    "mrp": 800,
+    "price": 720,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 227,
+    "name": "Butterfly",
+    "category": "Kids Specials",
+    "mrp": 900,
+    "price": 810,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 228,
+    "name": "Helicopter",
+    "category": "Kids Specials",
+    "mrp": 1000,
+    "price": 900,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 229,
+    "name": "Spinner",
+    "category": "Kids Specials",
+    "mrp": 1200,
+    "price": 1080,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 230,
+    "name": "Drone",
+    "category": "Kids Specials",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 231,
+    "name": "Smoke",
+    "category": "Kids Specials",
+    "mrp": 1500,
+    "price": 1350,
+    "pack_unit": "Box",
+    "pieces": 3
+  },
+  {
+    "id": 232,
+    "name": "7 Cm Electric Sparklers",
+    "category": "Sparklers",
+    "mrp": 80,
+    "price": 72,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 233,
+    "name": "7 Cm Colour Sparklers",
+    "category": "Sparklers",
+    "mrp": 100,
+    "price": 90,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 234,
+    "name": "7 Cm Green Sparklers",
+    "category": "Sparklers",
+    "mrp": 120,
+    "price": 108,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 235,
+    "name": "7 Cm Red Sparklers",
+    "category": "Sparklers",
+    "mrp": 140,
+    "price": 126,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 236,
+    "name": "10 Cm Electric Sparklers",
+    "category": "Sparklers",
+    "mrp": 180,
+    "price": 162,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 237,
+    "name": "10 Cm Colour Sparklers",
+    "category": "Sparklers",
+    "mrp": 200,
+    "price": 180,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 238,
+    "name": "10 Cm Green Sparklers",
+    "category": "Sparklers",
+    "mrp": 220,
+    "price": 198,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 239,
+    "name": "10 Cm Red Sparklers",
+    "category": "Sparklers",
+    "mrp": 240,
+    "price": 216,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 240,
+    "name": "12 Cm Electric Sparklers",
+    "category": "Sparklers",
+    "mrp": 240,
+    "price": 216,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 241,
+    "name": "12 Cm Colour Sparklers",
+    "category": "Sparklers",
+    "mrp": 260,
+    "price": 234,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 242,
+    "name": "12 Cm Green Sparklers",
+    "category": "Sparklers",
+    "mrp": 280,
+    "price": 252,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 243,
+    "name": "12 Cm Red Sparklers",
+    "category": "Sparklers",
+    "mrp": 320,
+    "price": 288,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 244,
+    "name": "15 Cm Electric Sparklers",
+    "category": "Sparklers",
+    "mrp": 400,
+    "price": 360,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 245,
+    "name": "15 Cm Colour Sparklers",
+    "category": "Sparklers",
+    "mrp": 450,
+    "price": 405,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 246,
+    "name": "15 Cm Green Sparklers",
+    "category": "Sparklers",
+    "mrp": 500,
+    "price": 450,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 247,
+    "name": "15 Cm Red Sparklers",
+    "category": "Sparklers",
+    "mrp": 600,
+    "price": 540,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 248,
+    "name": "30 Cm Electric Sparklers",
+    "category": "Sparklers",
+    "mrp": 400,
+    "price": 360,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 249,
+    "name": "30 Cm Colour Sparklers",
+    "category": "Sparklers",
+    "mrp": 450,
+    "price": 405,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 250,
+    "name": "30 Cm Green Sparklers",
+    "category": "Sparklers",
+    "mrp": 500,
+    "price": 450,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 251,
+    "name": "30 Cm Red Sparklers",
+    "category": "Sparklers",
+    "mrp": 600,
+    "price": 540,
+    "pack_unit": "Box",
+    "pieces": 10
+  },
+  {
+    "id": 252,
+    "name": "50 Cm Electric Sparklers",
+    "category": "Sparklers",
+    "mrp": 1700,
+    "price": 1530,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 253,
+    "name": "50 Cm Colour Sparklers",
+    "category": "Sparklers",
+    "mrp": 1900,
+    "price": 1710,
+    "pack_unit": "Box",
+    "pieces": 5
+  },
+  {
+    "id": 254,
+    "name": "Rotating Umbrella Sparklers",
+    "category": "Sparklers",
+    "mrp": 2200,
+    "price": 1980,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 255,
+    "name": "Love Candle",
+    "category": "Sparklers",
+    "mrp": 1300,
+    "price": 1170,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 256,
+    "name": "Deluxe Colour Matches",
+    "category": "Matches & Caps",
+    "mrp": 500,
+    "price": 450,
+    "pack_unit": "Box",
+    "pieces": "10 Box"
+  },
+  {
+    "id": 257,
+    "name": "Rider Colour Matches",
+    "category": "Matches & Caps",
+    "mrp": 1300,
+    "price": 1170,
+    "pack_unit": "Box",
+    "pieces": "10 Box"
+  },
+  {
+    "id": 258,
+    "name": "Twister Colour Matches",
+    "category": "Matches & Caps",
+    "mrp": 1800,
+    "price": 1620,
+    "pack_unit": "Box",
+    "pieces": "10 Box"
+  },
+  {
+    "id": 259,
+    "name": "Candy Pop Colour Matches",
+    "category": "Matches & Caps",
+    "mrp": 2200,
+    "price": 1980,
+    "pack_unit": "Box",
+    "pieces": "10 Box"
+  },
+  {
+    "id": 260,
+    "name": "Roll Cap",
+    "category": "Matches & Caps",
+    "mrp": 800,
+    "price": 720,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 261,
+    "name": "Ring Cap",
+    "category": "Matches & Caps",
+    "mrp": 100,
+    "price": 90,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 262,
+    "name": "15 Items Gift Box",
+    "category": "Gift Boxes",
+    "mrp": 3000,
+    "price": 2700,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 263,
+    "name": "20 Items Gift Box",
+    "category": "Gift Boxes",
+    "mrp": 3500,
+    "price": 3150,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 264,
+    "name": "25 Items Gift Box",
+    "category": "Gift Boxes",
+    "mrp": 4000,
+    "price": 3600,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 265,
+    "name": "30 Items Gift Box",
+    "category": "Gift Boxes",
+    "mrp": 5000,
+    "price": 4500,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 266,
+    "name": "35 Items Gift Box",
+    "category": "Gift Boxes",
+    "mrp": 6000,
+    "price": 5400,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 267,
+    "name": "40 Items Gift Box",
+    "category": "Gift Boxes",
+    "mrp": 8000,
+    "price": 7200,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 268,
+    "name": "50 Items Gift Box",
+    "category": "Gift Boxes",
+    "mrp": 10000,
+    "price": 9000,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 269,
+    "name": "60 Items Gift Box",
+    "category": "Gift Boxes",
+    "mrp": 13500,
+    "price": 12150,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 270,
+    "name": "2500 Combo Pack",
+    "category": "Combo Packs",
+    "mrp": 25000,
+    "price": 22500,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 271,
+    "name": "3000 Combo Pack",
+    "category": "Combo Packs",
+    "mrp": 30000,
+    "price": 27000,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 272,
+    "name": "5000 Combo Pack",
+    "category": "Combo Packs",
+    "mrp": 50000,
+    "price": 45000,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 273,
+    "name": "7500 Combo Pack",
+    "category": "Combo Packs",
+    "mrp": 75000,
+    "price": 67500,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 274,
+    "name": "10000 Combo Pack",
+    "category": "Combo Packs",
+    "mrp": 100000,
+    "price": 90000,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 275,
+    "name": "15000 Mega Combo Pack",
+    "category": "Combo Packs",
+    "mrp": 150000,
+    "price": 135000,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 276,
+    "name": "20000 Mega Combo Pack",
+    "category": "Combo Packs",
+    "mrp": 200000,
+    "price": 180000,
+    "pack_unit": "Box",
+    "pieces": null
+  },
+  {
+    "id": 277,
+    "name": "25000 Mega Combo Pack",
+    "category": "Combo Packs",
+    "mrp": 250000,
+    "price": 225000,
+    "pack_unit": "Box",
+    "pieces": null
+  }
+]

@@ -24,6 +24,7 @@ async function request(path, options = {}) {
 }
 
 export const getProducts = () => request('/products');
+export const getProduct = (productId, options) => request(`/products/${productId}`, options);
 export const getCategories = () => request('/categories');
 
 export const createOrder = (order) =>
@@ -34,3 +35,12 @@ export const loginAdmin = (credentials) =>
 
 export const getCurrentAdmin = () => request('/auth/me');
 export const logoutAdmin = () => request('/auth/logout', { method: 'POST' });
+
+export const registerCustomer = (profile) =>
+  request('/customer/auth/register', { method: 'POST', body: JSON.stringify(profile) });
+
+export const loginCustomer = (credentials) =>
+  request('/customer/auth/login', { method: 'POST', body: JSON.stringify(credentials) });
+
+export const getCurrentCustomer = () => request('/customer/auth/me');
+export const logoutCustomer = () => request('/customer/auth/logout', { method: 'POST' });

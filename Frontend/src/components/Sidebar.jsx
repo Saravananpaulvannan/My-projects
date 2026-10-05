@@ -10,13 +10,14 @@ const links = [
   { to: '/products', label: 'Products', icon: 'sparkles' },
   { to: '/cart', label: 'Cart', icon: 'shopping-cart', badge: true },
   { to: '/checkout', label: 'Checkout', icon: 'credit-card' },
+  { to: '/auth', label: 'Sign in', icon: 'user' },
   { to: '/contact', label: 'Contact', icon: 'phone' },
   { to: '/admin', label: 'Admin', icon: 'list-checks', adminOnly: true },
 ];
 
 export default function Sidebar({ open, onClose }) {
   const { count } = useCart();
-  const { admin, isAdmin, openLogin, logout } = useAuth();
+  const { admin, customer, isAdmin, openLogin, logout } = useAuth();
   const [settingsOpen, setSettingsOpen] = useState(false);
   const settingsRef = useRef(null);
 
@@ -68,7 +69,7 @@ export default function Sidebar({ open, onClose }) {
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
           >
             <Icon name={l.icon} className="nav-icon" />
-            <span>{l.label}</span>
+            <span>{l.to === '/auth' && customer ? 'Account' : l.label}</span>
             {l.badge && count > 0 && <span className="badge">{count}</span>}
           </NavLink>
         ))}

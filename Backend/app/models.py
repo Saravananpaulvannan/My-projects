@@ -20,6 +20,21 @@ class Product(Base):
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
 
 
+class User(Base):
+    __tablename__ = "users"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_name: Mapped[str] = mapped_column(String(160), nullable=False)
+    user_email: Mapped[str | None] = mapped_column(String(254), index=True)
+    user_mobile: Mapped[str] = mapped_column(String(10), nullable=False, index=True)
+    user_addr1: Mapped[str | None] = mapped_column(String(240))
+    user_addr2: Mapped[str | None] = mapped_column(String(240))
+    pincode: Mapped[str | None] = mapped_column(String(6))
+    password: Mapped[str] = mapped_column(String(255), nullable=False)
+    sessions: Mapped[list["CustomerSession"]] = relationship(back_populates="user", cascade="all, delete-orphan")
+    orders: Mapped[list["Order"]] = relationship(back_populates="user")
+
+
 class Order(Base):
     __tablename__ = "orders"
 
@@ -33,11 +48,14 @@ class Order(Base):
     state: Mapped[str] = mapped_column(String(120), nullable=False)
     pincode: Mapped[str] = mapped_column(String(6), nullable=False)
     payment_method: Mapped[str] = mapped_column(String(20), nullable=False)
+    user_category: Mapped[str] = mapped_column(String(16), nullable=False, default="guest", server_default="guest")
+    user_id: Mapped[int | None] = mapped_column(ForeignKey("users.id"), index=True)
     subtotal: Mapped[Decimal] = mapped_column(Numeric(12, 2), nullable=False)
     total: Mapped[Decimal] = mapped_column(Numeric(12, 2), nullable=False)
     status: Mapped[str] = mapped_column(String(30), nullable=False, default="received")
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
     items: Mapped[list["OrderItem"]] = relationship(back_populates="order", cascade="all, delete-orphan")
+    user: Mapped[User | None] = relationship(back_populates="orders")
 
 
 class OrderItem(Base):
@@ -63,3 +81,13 @@ class AdminSession(Base):
     token_hash: Mapped[str] = mapped_column(String(64), nullable=False, unique=True, index=True)
     phone: Mapped[str] = mapped_column(String(10), nullable=False)
     expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, index=True)
+
+
+class CustomerSession(Base):
+    __tablename__ = "customer_sessions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    token_hash: Mapped[str] = mapped_column(String(64), unique=True, nullable=False, index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, index=True)
+    user: Mapped[User] = relationship(back_populates="sessions")

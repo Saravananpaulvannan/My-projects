@@ -69,6 +69,7 @@ class OrderRead(BaseModel):
     order_id: str
     placed_at: datetime
     status: str
+    user_category: Literal["guest", "loginuser"]
     customer: CustomerRead
     payment_method: Literal["cod"]
     items: list[OrderItemRead]
@@ -89,3 +90,37 @@ class AdminRead(BaseModel):
 
 class AdminLoginRead(BaseModel):
     admin: AdminRead
+
+
+class UserRegister(BaseModel):
+    name: str = Field(min_length=2, max_length=160)
+    email: EmailStr | None = None
+    mobile: str = Field(pattern=r"^[6-9]\d{9}$")
+    address_line1: str | None = Field(default=None, max_length=240)
+    address_line2: str | None = Field(default=None, max_length=240)
+    pincode: str | None = Field(default=None, pattern=r"^\d{6}$")
+    password: str = Field(min_length=12, max_length=256)
+
+    @field_validator("name", "address_line1", "address_line2", mode="before")
+    @classmethod
+    def strip_optional_text(cls, value: str | None) -> str | None:
+        return value.strip() if isinstance(value, str) else value
+
+
+class UserLogin(BaseModel):
+    identifier: str = Field(min_length=1, max_length=254)
+    password: str = Field(min_length=1, max_length=256)
+
+
+class UserRead(BaseModel):
+    id: int
+    name: str
+    email: str | None
+    mobile: str
+    address_line1: str | None
+    address_line2: str | None
+    pincode: str | None
+
+
+class UserSessionRead(BaseModel):
+    user: UserRead

@@ -16,8 +16,6 @@ const categoryIcons = {
   'Combo Packs': 'package',
 };
 
-export { categoryIcons };
-
 export const formatUnit = (per, pcs) => {
   if (pcs == null) return `1 ${per}`;
   return `1 ${per} · ${typeof pcs === 'number' ? `${pcs} Pcs` : pcs}`;

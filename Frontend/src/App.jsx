@@ -5,10 +5,12 @@ import Icon from './components/Icons.jsx';
 import Logo from './components/Logo.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Products from './pages/Products.jsx';
+import ProductDetails from './pages/ProductDetails.jsx';
 import Cart from './pages/Cart.jsx';
 import Checkout from './pages/Checkout.jsx';
 import Contact from './pages/Contact.jsx';
 import Admin from './pages/Admin.jsx';
+import Auth from './pages/Auth.jsx';
 import LoginDialog from './components/LoginDialog.jsx';
 import FloatingCheckout from './components/FloatingCheckout.jsx';
 import { useAuth } from './context/AuthContext.jsx';
@@ -53,9 +55,11 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:productId" element={<ProductDetails />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/auth" element={<Auth />} />
             <Route path="/admin" element={<RequireAdmin><Admin /></RequireAdmin>} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

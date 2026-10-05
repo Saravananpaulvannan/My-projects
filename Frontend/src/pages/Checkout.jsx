@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext.jsx';
 import { formatINR, formatUnit } from '../data/products.js';
@@ -37,12 +37,24 @@ function validate(f) {
 
 export default function Checkout() {
   const { items, subtotal, clearCart } = useCart();
-  const { isAdmin } = useAuth();
+  const { isAdmin, customer } = useAuth();
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [order, setOrder] = useState(null);
   const [submitError, setSubmitError] = useState('');
   const [busy, setBusy] = useState(false);
+
+  useEffect(() => {
+    if (!customer) return;
+    setForm((current) => ({
+      ...current,
+      name: current.name || customer.name,
+      phone: current.phone || customer.mobile,
+      email: current.email || customer.email || '',
+      address: current.address || [customer.address_line1, customer.address_line2].filter(Boolean).join(', '),
+      pincode: current.pincode || customer.pincode || '',
+    }));
+  }, [customer]);
 
   if (order) {
     return (
@@ -147,6 +159,7 @@ export default function Checkout() {
   return (
     <div className="page">
       <h1 className="page-title">Checkout</h1>
+      {!customer && <p className="auth-checkout-prompt"><Link to="/auth?returnTo=%2Fcheckout">Sign in</Link> to save your details, or continue as a guest.</p>}
 
       <form className="cart-layout" onSubmit={onSubmit} noValidate>
         <div className="card">
