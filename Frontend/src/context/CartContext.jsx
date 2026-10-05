@@ -17,7 +17,8 @@ export function CartProvider({ children }) {
   const [items, setItems] = useState(loadCart);
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    if (items.length === 0) localStorage.removeItem(STORAGE_KEY);
+    else localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
   }, [items]);
 
   const addToCart = (product, qty = 1) =>

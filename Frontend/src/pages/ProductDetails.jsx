@@ -51,12 +51,15 @@ export default function ProductDetails() {
     <div className="page">
       <Link to="/products" className="link"><Icon name="arrow-left" size={16} /> Back to products</Link>
       <div className="product-detail">
-        <div className="card product-detail-visual" aria-label={`${product.name} product icon`}>
-          <Icon name={product.icon} size={120} strokeWidth={1.25} />
+        <div className="card product-detail-visual" aria-label={`${product.name} product image`}>
+          {product.image_url
+            ? <img src={product.image_url} alt={product.name} />
+            : <Icon name={product.icon} size={120} strokeWidth={1.25} />}
         </div>
         <section className="card product-detail-info" aria-labelledby="product-detail-title">
           <span className="product-cat">{product.category}</span>
           <h1 id="product-detail-title">{product.name}</h1>
+          {product.description && <p>{product.description}</p>}
           <div className="product-detail-price">
             <span className="price">{formatINR(product.price)}</span>
             <span className="mrp">{formatINR(product.mrp)}</span>
@@ -68,7 +71,7 @@ export default function ProductDetails() {
             <div><dt>Category</dt><dd>{product.category}</dd></div>
             <div><dt>Listed MRP</dt><dd>{formatINR(product.mrp)}</dd></div>
             <div><dt>Offer price</dt><dd>{formatINR(product.price)}</dd></div>
-            <div><dt>You save</dt><dd>{formatINR(product.mrp - product.price)}</dd></div>
+            <div className="product-detail-save"><dt>You save</dt><dd>{formatINR(product.mrp - product.price)}</dd></div>
           </dl>
           <div className="product-detail-actions">
             {quantity > 0 ? (
@@ -84,7 +87,7 @@ export default function ProductDetails() {
                 <Icon name="shopping-cart" size={18} /> Add to Cart
               </button>
             )}
-            {quantity > 0 && <strong>{formatINR(product.price * quantity)} in cart</strong>}
+            {quantity > 0 && <strong className="product-detail-cart-total">{formatINR(product.price * quantity)} in cart</strong>}
           </div>
         </section>
       </div>

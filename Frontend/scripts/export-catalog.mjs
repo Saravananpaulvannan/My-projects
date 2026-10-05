@@ -11,7 +11,7 @@ const products = priceList
       name,
       category,
       mrp,
-      price: Math.round(mrp * 0.9),
+      price: Math.round(mrp * 0.1),
       pack_unit: itemPer ?? per,
       pieces: pieces ?? null,
     })),

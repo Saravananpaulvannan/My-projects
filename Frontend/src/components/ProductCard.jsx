@@ -13,7 +13,9 @@ export default function ProductCard({ product }) {
     <article className="product-card">
       <Link className="product-card-link" to={`/products/${product.id}`} aria-label={`View details for ${product.name}`}>
         <div className="product-img">
-          <Icon name={product.icon} size={46} strokeWidth={1.5} />
+          {product.image_url
+            ? <img src={product.image_url} alt={product.name} loading="lazy" />
+            : <Icon name={product.icon} size={46} strokeWidth={1.5} />}
           <span className="discount-tag">{discount}% OFF</span>
         </div>
         <div className="product-body">

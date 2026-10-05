@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     admin_password_hash: str = ""
     session_cookie_secure: bool = False
     session_ttl_hours: int = 12
+    upload_dir: Path = Path(__file__).resolve().parents[1] / "uploads"
 
     model_config = SettingsConfigDict(env_file=Path(__file__).resolve().parents[1] / ".env", extra="ignore")
 

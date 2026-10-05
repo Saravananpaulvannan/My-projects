@@ -8,10 +8,12 @@ import {
   logoutCustomer as logoutCustomerRequest,
   registerCustomer as registerCustomerRequest,
 } from '../services/api.js';
+import { useCart } from './CartContext.jsx';
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
+  const { clearCart } = useCart();
   const [admin, setAdmin] = useState(null);
   const [customer, setCustomer] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -42,13 +44,13 @@ export function AuthProvider({ children }) {
     };
 
     const logout = async () => {
-      try {
-        await logoutAdmin();
-      } catch {
-        // Local access is cleared even if the server cannot be reached.
-      } finally {
-        setAdmin(null);
-      }
+      const requests = [];
+      if (admin) requests.push(logoutAdmin().catch(() => null));
+      if (customer) requests.push(logoutCustomerRequest().catch(() => null));
+      await Promise.all(requests);
+      setAdmin(null);
+      setCustomer(null);
+      clearCart();
     };
 
     const loginCustomer = async (credentials) => {
@@ -78,12 +80,12 @@ export function AuthProvider({ children }) {
         // Local access is cleared even if the server cannot be reached.
       } finally {
         setCustomer(null);
+        clearCart();
       }
     };
 
     return {
       admin,
-      isAdmin: !!admin,
       customer,
       isCustomer: !!customer,
       loading,
@@ -92,11 +94,15 @@ export function AuthProvider({ children }) {
       loginCustomer,
       registerCustomer,
       logoutCustomer,
+      updateCustomerRole: (userId, isAdmin) => setCustomer((current) =>
+        current?.id === userId ? { ...current, is_admin: isAdmin } : current
+      ),
+      isAdmin: !!admin || !!customer?.is_admin,
       loginOpen,
       openLogin: () => setLoginOpen(true),
       closeLogin: () => setLoginOpen(false),
     };
-  }, [admin, customer, loading, loginOpen]);
+  }, [admin, customer, loading, loginOpen, clearCart]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

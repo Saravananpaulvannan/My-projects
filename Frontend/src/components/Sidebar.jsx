@@ -18,6 +18,7 @@ const links = [
 export default function Sidebar({ open, onClose }) {
   const { count } = useCart();
   const { admin, customer, isAdmin, openLogin, logout } = useAuth();
+  const adminProfile = admin || (customer?.is_admin ? { name: customer.name, phone: customer.mobile } : null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const settingsRef = useRef(null);
 
@@ -77,7 +78,7 @@ export default function Sidebar({ open, onClose }) {
 
       <div className="sidebar-card">
         <div className="sidebar-card-title"><Icon name="flame" size={18} /> Festival Offer</div>
-        <p>10% off listed prices. Minimum order depends on delivery state.</p>
+        <p>Up to 90% off listed prices. Minimum order depends on delivery state.</p>
       </div>
 
       <div className="settings" ref={settingsRef}>
@@ -88,8 +89,8 @@ export default function Sidebar({ open, onClose }) {
                 <div className="settings-user">
                   <Icon name="user" size={18} />
                   <div>
-                    <strong>{admin.name}</strong>
-                    <small>{admin.phone}</small>
+                    <strong>{adminProfile.name}</strong>
+                    <small>{adminProfile.phone}</small>
                   </div>
                 </div>
                 <button type="button" role="menuitem" onClick={handleLogout}>
@@ -112,7 +113,7 @@ export default function Sidebar({ open, onClose }) {
           onClick={() => setSettingsOpen((o) => !o)}
         >
           <Icon name="settings" size={20} />
-          <span>{isAdmin ? admin.name : 'Settings'}</span>
+          <span>{isAdmin ? adminProfile.name : 'Settings'}</span>
         </button>
       </div>
     </aside>

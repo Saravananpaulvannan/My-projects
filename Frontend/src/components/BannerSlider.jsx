@@ -7,7 +7,7 @@ const slides = [
     title: 'Light Up Your Diwali',
     text: 'Premium quality crackers direct from Sivakasi at the best prices.',
     cta: 'Shop Now',
-    offer: '10% OFF MRP',
+    offer: 'UP TO 90% OFF MRP',
     art: ['sparkles', 'rocket', 'star'],
     tone: 'primary',
   },

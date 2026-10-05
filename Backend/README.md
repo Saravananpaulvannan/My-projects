@@ -1,6 +1,6 @@
 # Aaradhaya Crackers API
 
-FastAPI service for the product catalog, COD order creation, and admin sessions. Product prices and order totals are calculated by the server. Admin authentication is configured separately from the frontend.
+FastAPI service for the product catalog, COD order creation, and admin sessions. Product prices and order totals are calculated by the server. Admin APIs use the configured admin session or a customer profile with `is_admin=true`.
 
 ## Local setup
 
@@ -11,7 +11,7 @@ python -m venv Backend/.venv
 Backend/.venv/Scripts/python -m pip install -r Backend/requirements.txt
 ```
 
-Copy `Backend/.env.example` to `Backend/.env`. Its SQLite URL points to the supplied database. The migration is additive: it leaves the existing `users` table untouched and creates the catalog/order/session tables. Apply it and seed the catalog:
+Copy `Backend/.env.example` to `Backend/.env`. Its SQLite URL points to the supplied database. Migrations are additive and preserve existing users, products, and orders. Apply them and import any missing bootstrap catalog products:
 
 ```powershell
 Backend/.venv/Scripts/python -m alembic -c Backend/alembic.ini upgrade head
@@ -22,7 +22,9 @@ Remove-Item Env:PYTHONPATH
 .\Backend\.venv\Scripts\python.exe -m uvicorn app.main:app --app-dir Backend --reload
 ```
 
-The API is available at `http://localhost:8000`; interactive API documentation is at `/docs`. The frontend Vite server proxies `/api` to this local service.
+The API is available at `http://localhost:8000`; interactive API documentation is at `/docs`. The frontend Vite server proxies `/api` and `/media` to this local service. Uploaded images are stored under `UPLOAD_DIR` (default `Backend/uploads`); deployments must mount persistent storage at that location. Product updates are database-authoritative: exporting or importing the catalog never overwrites existing database product records.
+
+The admin workspace provides product management, order details, delivery-status updates, customer access management, and server-generated order PDFs. Install dependencies from `Backend/requirements.txt` to enable PDF generation (ReportLab).
 
 ## Admin setup
 

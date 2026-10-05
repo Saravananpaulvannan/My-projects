@@ -1,7 +1,7 @@
 from datetime import datetime
 from decimal import Decimal
 
-from sqlalchemy import JSON, Boolean, DateTime, ForeignKey, Integer, Numeric, String, Text, func
+from sqlalchemy import JSON, Boolean, DateTime, ForeignKey, Integer, Numeric, String, Text, false, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.database import Base
@@ -17,7 +17,14 @@ class Product(Base):
     price: Mapped[int] = mapped_column(Integer, nullable=False)
     pack_unit: Mapped[str] = mapped_column(String(40), nullable=False)
     pieces: Mapped[int | str | None] = mapped_column(JSON)
+    description: Mapped[str | None] = mapped_column(Text)
+    image_path: Mapped[str | None] = mapped_column(String(255))
+    stock_quantity: Mapped[int] = mapped_column(Integer, nullable=False, default=0, server_default="0")
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+
+    @property
+    def image_url(self) -> str | None:
+        return f"/media/{self.image_path}" if self.image_path else None
 
 
 class User(Base):
@@ -31,8 +38,15 @@ class User(Base):
     user_addr2: Mapped[str | None] = mapped_column(String(240))
     pincode: Mapped[str | None] = mapped_column(String(6))
     password: Mapped[str] = mapped_column(String(255), nullable=False)
+    is_admin: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False, server_default=false())
     sessions: Mapped[list["CustomerSession"]] = relationship(back_populates="user", cascade="all, delete-orphan")
     orders: Mapped[list["Order"]] = relationship(back_populates="user")
+
+
+class UserIdSequence(Base):
+    __tablename__ = "user_id_sequence"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
 
 
 class Order(Base):
@@ -53,6 +67,7 @@ class Order(Base):
     subtotal: Mapped[Decimal] = mapped_column(Numeric(12, 2), nullable=False)
     total: Mapped[Decimal] = mapped_column(Numeric(12, 2), nullable=False)
     status: Mapped[str] = mapped_column(String(30), nullable=False, default="received")
+    delivery_status: Mapped[str] = mapped_column(String(20), nullable=False, default="Placed", server_default="Placed")
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
     items: Mapped[list["OrderItem"]] = relationship(back_populates="order", cascade="all, delete-orphan")
     user: Mapped[User | None] = relationship(back_populates="orders")

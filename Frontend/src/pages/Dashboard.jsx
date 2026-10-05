@@ -15,7 +15,7 @@ const features = [
   { icon: 'factory', title: 'Direct from Sivakasi', text: 'Sourced straight from licensed manufacturers for authentic quality.' },
   { icon: 'leaf', title: 'Eco-Friendly Options', text: 'Green crackers with reduced emissions and lower noise levels.' },
   { icon: 'shield-check', title: 'Safety Certified', text: 'All products comply with PESO safety and quality standards.' },
-  { icon: 'badge-indian-rupee', title: 'Best Prices', text: 'Wholesale rates with 10% off listed MRP across the catalog.' },
+  { icon: 'badge-indian-rupee', title: 'Best Prices', text: 'Wholesale rates with up to 90% off listed MRP across the catalog.' },
 ];
 
 const safetyTips = [

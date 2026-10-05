@@ -13,13 +13,13 @@ document.querySelector("link[rel='icon']")?.setAttribute('href', LOGO_SRC);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <AuthProvider>
-        <CartProvider>
+      <CartProvider>
+        <AuthProvider>
           <CatalogProvider>
             <App />
           </CatalogProvider>
-        </CartProvider>
-      </AuthProvider>
+        </AuthProvider>
+      </CartProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -5,11 +5,11 @@ from secrets import token_urlsafe
 from uuid import uuid4
 
 from pwdlib import PasswordHash
-from sqlalchemy import select
+from sqlalchemy import insert, select
 from sqlalchemy.orm import Session, selectinload
 
 from app.config import settings
-from app.models import AdminSession, CustomerSession, Order, OrderItem, Product, User
+from app.models import AdminSession, CustomerSession, Order, OrderItem, Product, User, UserIdSequence
 from app.schemas import OrderCreate, UserRegister
 
 password_hash = PasswordHash.recommended()
@@ -90,6 +90,7 @@ def public_order(order: Order) -> dict:
         "order_id": order.order_number,
         "placed_at": order.created_at,
         "status": order.status,
+        "delivery_status": order.delivery_status,
         "user_category": order.user_category,
         "customer": {
             "name": order.customer_name,
@@ -168,7 +169,12 @@ def create_customer(db: Session, request: UserRegister) -> User:
     if normalized_email and db.scalar(select(User.id).where(User.user_email == normalized_email)) is not None:
         raise ValueError("An account with this email address already exists.")
 
+    user_id = None
+    if db.get_bind().dialect.name == "sqlite":
+        user_id = db.execute(insert(UserIdSequence).returning(UserIdSequence.id)).scalar_one()
+
     user = User(
+        id=user_id,
         user_name=request.name,
         user_email=normalized_email,
         user_mobile=request.mobile,
@@ -242,4 +248,28 @@ def public_user(user: User) -> dict:
         "address_line1": user.user_addr1,
         "address_line2": user.user_addr2,
         "pincode": user.pincode,
+        "is_admin": user.is_admin,
+    }
+
+
+def public_admin_customer(user: User) -> dict:
+    return {
+        "id": user.id,
+        "name": user.user_name,
+        "email": user.user_email,
+        "mobile": user.user_mobile,
+        "is_admin": user.is_admin,
+    }
+
+
+def public_admin_order_summary(order: Order) -> dict:
+    return {
+        "order_id": order.order_number,
+        "placed_at": order.created_at,
+        "customer_name": order.customer_name,
+        "phone": order.phone,
+        "item_count": sum(item.quantity for item in order.items),
+        "total": int(order.total),
+        "payment_method": order.payment_method,
+        "delivery_status": order.delivery_status,
     }
